@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            My first AngularJS app!
+        </title>
+        <meta name="viewport" content="width=device-width">
+        <!-- build:css({.tmp,app}) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <!-- fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,800">
+        <!-- end fonts -->
+    </head>
+    <body ng-app="angApp">
+        <!-- Add your site or application content here -->
+        <div class="site-container" ng-view=""></div>
+        <!-- Google Maps integration -->
+        <!-- build:js scripts/vendor.js -->
+      <!---<script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+        <script src='/path/to/underscore[-min].js'></script>
+        <script src='/path/to/angular-google-maps[.min].js'></script>
+        --><script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/profile.js"></script>
+        <script src="scripts/directives/siteMainHeader.js"></script>
+        <script src="scripts/filters/capitalize.js"></script>
+        <script src="scripts/directives/serial.js"></script>
+        <script src="scripts/directives/serialsList.js"></script>
+        <script src="scripts/services/demo.js"></script>
+        <script src="scripts/services/GithubService.js"></script>
+        <script src="scripts/directives/exjobs.js"></script>
+        <script src="scripts/directives/jobsList.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

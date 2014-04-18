@@ -1,0 +1,15 @@
+<div>
+    <p>
+        <span class="lead">Status:</span>
+        <span class="second">{{serialModel.name}}</span>
+    </p>
+    <p ng-if="serialModel.actors.length > 0">
+        <span class="lead">Positions open:</span>
+        <span class="actor second" ng-repeat="a in serialModel.actors">{{a}}</span>
+    </p>
+    <p>
+        <span class="lead">Atendees</span>
+        <span class="second">{{serialModel.rating}}</span>
+    </p>
+    <button ng-click="clickFunction()">Click me!</button>
+</div>

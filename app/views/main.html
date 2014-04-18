@@ -1,0 +1,22 @@
+<site-main-header></site-main-header>
+<section class="main-content">
+    <h2 class="lead">
+      Here you can enter your CV, it should be somewhat interactive using some basic stuff and the property that ng renders in instant speed... almost
+    </h2>
+    <!--<div class="block-demo">
+        <div class="profile-pic">
+        </div>
+        <input type="text" ng-model="gender">
+        <input type="text" ng-model="fullname">
+        <span>filter: {{gender | genderbender}} filter: {{fullname | greeting}}</span>
+      </div> --!>
+    <div class="block-demo">
+        <p>Capitalize filter:</p>
+        <input type="text" ng-model="surname" placeholder="Enter mr and ms accordingly followed by your name">
+        <span class = "image_identifier">{{surname | capitalize}}</span>
+        <div class="profile_image">
+        </div>
+    </div>
+    <serials-list></serials-list>
+    <jobs-list></jobs-list>
+    </section>

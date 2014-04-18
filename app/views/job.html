@@ -1,0 +1,13 @@
+<div>
+  <p>
+  <span class="lead"> Former job name:</span>
+  <span class="second">{{jobModel.name}}</span>
+  </p>
+  <p ng-if="jobModel.vector.length > 0">
+    <span class="lead">Exemple de chestii</span>
+    <span class="actor second" ng-repeat="j in jobModel.vector">{{j}}</span>
+  </p>
+
+  </p>
+</div>
+

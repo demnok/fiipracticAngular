@@ -1,0 +1,276 @@
+/*
+    Basic CSS reset.
+ */
+
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+span,
+em,
+strong,
+address,
+cite,
+code,
+pre,
+ol,
+ul,
+li,
+fieldset,
+form,
+button,
+input,
+textarea,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+figure,
+figcaption,
+img,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font: inherit;
+  font-size: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+/*
+    Change the global box-model of the elements.
+ */
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+    General styles
+ */
+
+html,
+body {
+  min-height: 100%;
+  font-size: 16px !important;
+  font-family: 'Open Sans', sans-serif;
+  /* only the 'Light' version */
+}
+
+.main-content {
+  margin: 0 auto;
+  padding-top: 3rem;
+  width: 50rem;
+  /* 900px */
+}
+
+.lead {
+  font-weight: 300;
+  font-size: 1.25rem;
+  /* 20px */
+}
+
+/*
+    Style the main header
+ */
+
+.main-header {
+  height: 7rem;
+  /* relative unit (1rem = 16px) */
+  border-bottom: 1px solid #077d66;
+  background: #16a085;
+}
+
+.main-header h1 {
+  color: #fff;
+  text-align: center;
+  overflow: none;
+  text-overflow: ellipsis;
+  font-weight: 300;
+  /* light */
+  font-size: 2rem;
+  /* equals 32px */
+  line-height: 3rem;
+}
+
+/*
+    Style the general block wrapper
+ */
+
+.block-demo {
+  margin-top: 2rem;
+  /* 32px */
+  padding: 1.25rem;
+  /* 20px */
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  background: #ecf0f1;
+}
+
+.block-demo p {
+  margin-bottom: 1rem;
+  /* 16px */
+  font-weight: 900;
+  /* bold */
+  font-size: .875rem;
+}
+
+.block-demo input {
+  padding: .5rem;
+  /* 8px */
+  height: 2rem;
+  /* 32px */
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  background: #f7f7f7f;
+  width: 26rem;
+  margin-bottom: 2rem;
+}
+
+.block-demo span {
+  margin-left: 1rem;
+  /* 16px */
+  font-size: .875rem;
+}
+
+.block-demo strong {
+  font-weight: 900;
+  /* bold */
+}
+
+.profile_image {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+}
+
+/*
+   Style the serials list 
+ */
+
+.s-list {
+  margin-top: 2rem;
+  font-size: 0;
+}
+
+.s-list li {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  width: 48%;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  background: #ecf0f1;
+  font-size: 1rem;
+}
+
+.s-list li:first-child {
+  margin: 0;
+}
+
+.s-list li:nth-child(odd) {
+  margin-right: 4%;
+}
+
+.s-list li p {
+  margin-bottom: .75rem;
+}
+
+.s-list li p:last-of-type {
+  margin: 0;
+}
+
+.s-list .lead {
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.s-list .second {
+  font-style: italic;
+}
+
+.s-list .actor {
+  margin-right: .5rem;
+}
+
+.s-list .actor:last-child {
+  margin: 0;
+}
+
+.s-list button {
+  margin-top: .75rem;
+  padding: .5rem .75rem;
+  border-radius: 3px;
+  background: #3498db;
+  color: #fff;
+  font-size: .875rem;
+}
+
+.s-list button:hover {
+  cursor: pointer;
+}
